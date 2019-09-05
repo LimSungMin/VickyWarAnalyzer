@@ -116,8 +116,8 @@ public class WarDetailsController extends AbstractController {
 		this.tab = tab;
 		this.modelService = modelService;
 		setColumnValues();
-		attackerBoxController.init(modelService, "Attacker");
-		defenderBoxController.init(modelService, "Defender");
+		attackerBoxController.init(modelService, "공격측");
+		defenderBoxController.init(modelService, "방어측");
 		battleTableContent = FXCollections.observableArrayList();
 
 		/* Listening to selections in battleTable */
@@ -216,10 +216,10 @@ public class WarDetailsController extends AbstractController {
 	private void lossesPopulate(War war) {
 		int [] losses = war.getLosses();
 
-		/* Attacker losses */
+		/* 공격측 losses */
 		attackerBoxController.setTotalLosses(losses[0],
 				losses[1]);
-		/* Defender losses */
+		/* 방어측 losses */
 		defenderBoxController.setTotalLosses(losses[2],
 				losses[3]);
 		/* Total losses */

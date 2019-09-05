@@ -27,16 +27,16 @@
 								   HBox.hgrow="ALWAYS"
 								   HBox.margin="$x1">
 							<columns>
-								<TableColumn prefWidth="100.0" text="Battle" fx:id="colNameBattle"/>
-								<TableColumn prefWidth="75.0" text="Date" fx:id="colDateBattle"/>
-								<TableColumn prefWidth="100.0" text="Attacker"
+								<TableColumn prefWidth="100.0" text="전투" fx:id="colNameBattle"/>
+								<TableColumn prefWidth="75.0" text="날짜" fx:id="colDateBattle"/>
+								<TableColumn prefWidth="100.0" text="공격국"
 											 fx:id="colAttackerBattle"/>
-								<TableColumn prefWidth="100.0" text="Defender"
+								<TableColumn prefWidth="100.0" text="방어국"
 											 fx:id="colDefenderBattle"/>
-								<TableColumn prefWidth="70.0" text="Type" fx:id="colTypeBattle"/>
-								<TableColumn prefWidth="70.0" text="Result"
+								<TableColumn prefWidth="70.0" text="유형" fx:id="colTypeBattle"/>
+								<TableColumn prefWidth="70.0" text="공격측 승리"
 											 fx:id="colBattleResult"/>
-								<TableColumn prefWidth="110.0" text="Total losses"
+								<TableColumn prefWidth="110.0" text="사상자"
 											 fx:id="colBattleTotalLosses"/>
 							</columns>
 						</TableView>
@@ -66,7 +66,7 @@
 									  prefWidth="323.0001220703125"
 									  spacing="5.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
 									<children>
-										<Label styleClass="label-dark" text="Start date:"/>
+										<Label styleClass="label-dark" text="전투 시작:"/>
 										<Label id="startDateLabel" fx:id="warStartDateLabel"
 											   text="Label"/>
 									</children>
@@ -75,7 +75,7 @@
 									  GridPane.columnIndex="0"
 									  GridPane.rowIndex="3">
 									<children>
-										<Label styleClass="label-dark" text="End Date:"/>
+										<Label styleClass="label-dark" text="전투 종료:"/>
 										<Label fx:id="warEndDateLabel" text="Label"/>
 									</children>
 								</HBox>
@@ -83,7 +83,7 @@
 									  GridPane.columnIndex="1"
 									  GridPane.rowIndex="2">
 									<children>
-										<Label styleClass="label-dark" text="Total losses:"/>
+										<Label styleClass="label-dark" text="총 사상자:"/>
 										<Label fx:id="warTotalLossesLabel" text="Label"/>
 									</children>
 								</HBox>
@@ -91,7 +91,7 @@
 									  GridPane.columnIndex="1"
 									  GridPane.rowIndex="3">
 									<children>
-										<Label styleClass="label-dark" text="Total ships lost:"/>
+										<Label styleClass="label-dark" text="총 해군손실:"/>
 										<Label fx:id="warTotalShipLossesLabel" text="Label"/>
 									</children>
 								</HBox>
@@ -107,7 +107,7 @@
 									  GridPane.columnIndex="1"
 									  GridPane.rowIndex="4">
 									<children>
-										<Label styleClass="label-dark" text="Has ended:"/>
+										<Label styleClass="label-dark" text="종전 여부:"/>
 										<Label id="warActionLabel" fx:id="warHasEndedLabel"
 											   text="Label"/>
 									</children>
@@ -116,21 +116,21 @@
 									  GridPane.columnIndex="0"
 									  GridPane.columnSpan="2" GridPane.rowIndex="1">
 									<children>
-										<Label styleClass="label-dark" text="General information"/>
+										<Label styleClass="label-dark" text="개괄"/>
 									</children>
 								</HBox>
 								<HBox id="HBox" alignment="CENTER" spacing="5.0"
 									  GridPane.columnIndex="2"
 									  GridPane.columnSpan="2" GridPane.rowIndex="1">
 									<children>
-										<Label styleClass="label-dark" text="Original wargoal"/>
+										<Label styleClass="label-dark" text="전쟁 목표"/>
 									</children>
 								</HBox>
 								<HBox id="HBox" alignment="CENTER" prefHeight="30.0"
 									  prefWidth="323.0001220703125"
 									  spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
 									<children>
-										<Label styleClass="label-dark" text="Actor:"/>
+										<Label styleClass="label-dark" text="공격국:"/>
 										<Label id="startDateLabel" fx:id="warGoalActorLabel"
 											   text="Label"/>
 									</children>
@@ -139,7 +139,7 @@
 									  prefWidth="323.0001220703125"
 									  spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
 									<children>
-										<Label styleClass="label-dark" text="Receiver:"/>
+										<Label styleClass="label-dark" text="방어국:"/>
 										<Label id="startDateLabel" fx:id="warGoalReceiverLabel"
 											   text="Label"/>
 									</children>
@@ -149,7 +149,7 @@
 									  spacing="5.0" GridPane.columnIndex="2" GridPane.columnSpan="2"
 									  GridPane.rowIndex="3">
 									<children>
-										<Label styleClass="label-dark" text="Casus belli:"/>
+										<Label styleClass="label-dark" text="명분:"/>
 										<Label id="startDateLabel" fx:id="warGoalCBLabel"
 											   text="Label"/>
 									</children>
@@ -188,7 +188,7 @@
 									  spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
 									<children>
 										<Label fx:id="warGoalDateHelper" styleClass="label-dark"
-											   text="Date:"/>
+											   text="날짜:"/>
 										<Label id="startDateLabel" fx:id="warGoalDateLabel"
 											   text="Label"/>
 									</children>
@@ -207,7 +207,7 @@
 									  prefWidth="323.0001220703125"
 									  spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
 									<children>
-										<Label styleClass="label-dark" text="State ID:"/>
+										<Label styleClass="label-dark" text="주 ID:"/>
 										<Label id="startDateLabel" fx:id="warGoalStateLabel"
 											   text="Label"/>
 									</children>

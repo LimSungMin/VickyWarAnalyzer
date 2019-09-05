@@ -14,7 +14,7 @@ public class WarGoal {
 	private String date = "";
 	private double score = 0;
 	private double change = 0;
-	private Result fulfilled = Result.NO;
+	private Result fulfilled = Result.패배;
 
 
 	public WarGoal(int state_province_id) {

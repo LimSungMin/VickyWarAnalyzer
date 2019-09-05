@@ -37,14 +37,14 @@
 									  GridPane.columnSpan="2147483647" GridPane.rowIndex="0">
 									<children>
 										<Label fx:id="battleName" styleClass="label-header"
-											   text="Battle of this place"/>
+											   text="전투"/>
 									</children>
 								</HBox>
 								<HBox id="HBox" alignment="CENTER" spacing="5.0"
 									  GridPane.columnIndex="1"
 									  GridPane.rowIndex="1">
 									<children>
-										<Label styleClass="label-dark" text="Type:"/>
+										<Label styleClass="label-dark" text="유형:"/>
 										<Label fx:id="battleType" text="Label"/>
 									</children>
 								</HBox>
@@ -52,7 +52,7 @@
 									  GridPane.columnIndex="1"
 									  GridPane.rowIndex="2">
 									<children>
-										<Label styleClass="label-dark" text="Result:"/>
+										<Label styleClass="label-dark" text="결과:"/>
 										<Label fx:id="battleResult" text="Label"/>
 									</children>
 								</HBox>
@@ -60,7 +60,7 @@
 									  GridPane.columnIndex="0"
 									  GridPane.rowIndex="2">
 									<children>
-										<Label styleClass="label-dark" text="Location:"/>
+										<Label styleClass="label-dark" text="위치:"/>
 										<Label fx:id="battleLocation" text="Label"/>
 									</children>
 								</HBox>
@@ -68,7 +68,7 @@
 									  GridPane.columnIndex="0"
 									  GridPane.rowIndex="1">
 									<children>
-										<Label styleClass="label-dark" text="Date:"/>
+										<Label styleClass="label-dark" text="날짜:"/>
 										<Label fx:id="battleDate" text="Label"/>
 									</children>
 								</HBox>
@@ -76,7 +76,7 @@
 									  GridPane.columnIndex="0"
 									  GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
 									<children>
-										<Label styleClass="label-dark" text="Total losses:"/>
+										<Label styleClass="label-dark" text="총 사상자:"/>
 										<Label fx:id="battleTotalLosses" text="Label"/>
 									</children>
 								</HBox>

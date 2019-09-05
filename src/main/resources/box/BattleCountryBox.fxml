@@ -12,8 +12,8 @@
 				   maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0"
 				   GridPane.columnIndex="0" GridPane.rowIndex="6">
 			<columns>
-				<TableColumn fx:id="colUnitType" prefWidth="150.0" text="Unit"/>
-				<TableColumn fx:id="colUnitNumber" prefWidth="130.0" text="Numbers"/>
+				<TableColumn fx:id="colUnitType" prefWidth="150.0" text="병종"/>
+				<TableColumn fx:id="colUnitNumber" prefWidth="130.0" text="병력"/>
 			</columns>
 		</TableView>
 		<HBox id="HBox" alignment="CENTER" spacing="5.0" GridPane.columnIndex="0"
@@ -25,14 +25,14 @@
 		<HBox id="HBox" alignment="CENTER" spacing="5.0" GridPane.columnIndex="0"
 			  GridPane.rowIndex="4">
 			<children>
-				<Label styleClass="label-dark" text="Losses:"/>
+				<Label styleClass="label-dark" text="사상자:"/>
 				<Label fx:id="losses" text="Label"/>
 			</children>
 		</HBox>
 		<HBox id="HBox" alignment="CENTER" spacing="5.0" GridPane.columnIndex="0"
 			  GridPane.rowIndex="3">
 			<children>
-				<Label styleClass="label-dark" text="Total army size:"/>
+				<Label styleClass="label-dark" text="총 병력:"/>
 				<Label fx:id="armySize" text="Label"/>
 			</children>
 		</HBox>

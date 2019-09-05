@@ -24,7 +24,7 @@
 									  spacing="5.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
 									<children>
 										<Label alignment="CENTER" contentDisplay="CENTER"
-											   styleClass="label-dark" text="Player country:"/>
+											   styleClass="label-dark" text="플레이어 국가:"/>
 										<Label fx:id="playerLabel" alignment="CENTER"
 											   text="Hi there!"/>
 									</children>
@@ -33,7 +33,7 @@
 									  GridPane.columnIndex="0"
 									  GridPane.rowIndex="1">
 									<children>
-										<Label styleClass="label-dark" text="Start date:"/>
+										<Label styleClass="label-dark" text="시작 날짜:"/>
 										<Label fx:id="startDateLabel" text="1836.1.1"/>
 									</children>
 								</HBox>
@@ -41,7 +41,7 @@
 									  GridPane.columnIndex="0"
 									  GridPane.rowIndex="2">
 									<children>
-										<Label styleClass="label-dark" text="Current date:"/>
+										<Label styleClass="label-dark" text="현재 날짜:"/>
 										<Label fx:id="currentDateLabel" text="1867.3.16"/>
 									</children>
 								</HBox>
@@ -56,7 +56,7 @@
 									  GridPane.rowIndex="4">
 									<children>
 										<Label styleClass="label-dark"
-											   text="Click on the country to see its wars"/>
+											   text="국가를 클릭하여 전쟁목록을 확인하세요"/>
 									</children>
 								</HBox>
 							</children>
@@ -100,19 +100,19 @@
 									<items>
 										<Button fx:id="showAllWarsIssue" mnemonicParsing="false"
 												onAction="#showAllWarsIssue"
-												text="Show all wars"/>
+												text="모든 전쟁"/>
 										<Separator orientation="VERTICAL" prefHeight="200.0"/>
 										<Button fx:id="showActiveWarsIssue" mnemonicParsing="false"
 												onAction="#showActiveWarsIssue"
-												text="Show active wars"/>
+												text="진행중인 전쟁"/>
 										<Button fx:id="showPreviousWarsIssue"
 												mnemonicParsing="false"
 												onAction="#showPreviousWarsIssue"
-												text="Show previous wars"/>
+												text="이전 전쟁"/>
 										<Separator orientation="VERTICAL" prefHeight="200.0"/>
 										<Button fx:id="showMyWarsIssue" mnemonicParsing="false"
 												onAction="#showMyWarsIssue"
-												text="Show my wars"/>
+												text="플레이어의 전쟁"/>
 										<Separator orientation="VERTICAL" prefHeight="200.0"/>
 									</items>
 									<HBox.margin>
@@ -132,18 +132,18 @@
 										   HBox.hgrow="ALWAYS">
 									<columns>
 										<TableColumn maxWidth="500.0" minWidth="150.0"
-													 prefWidth="300.0" text="Name"
+													 prefWidth="300.0" text="전쟁"
 													 fx:id="colNameWar"/>
 										<TableColumn minWidth="50.0" prefWidth="120.0"
-													 text="Original attacker" fx:id="colAttackerWar"/>
+													 text="공격국" fx:id="colAttackerWar"/>
 										<TableColumn minWidth="50.0" prefWidth="120.0"
-													 text="Original defender" fx:id="colDefenderWar"/>
+													 text="방어국" fx:id="colDefenderWar"/>
 										<TableColumn minWidth="50.0" prefWidth="120.0"
-													 text="Casus belli" fx:id="colCasusBelliWar"/>
-										<TableColumn prefWidth="120.0" text="Start date"
+													 text="명분" fx:id="colCasusBelliWar"/>
+										<TableColumn prefWidth="120.0" text="개전"
 													 fx:id="colStartDateWar"/>
 										<TableColumn minWidth="50.0" prefWidth="120.0"
-													 text="End date" fx:id="colEndDateWar"/>
+													 text="종전" fx:id="colEndDateWar"/>
 									</columns>
 									<HBox.margin>
 										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"

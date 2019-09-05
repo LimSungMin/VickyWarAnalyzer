@@ -12,27 +12,27 @@
 	<TabPane tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0"
 			 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 		<tabs>
-			<Tab text="Settings">
+			<Tab text="세팅">
 				<content>
 					<fx:include fx:id="settings" source="tab/Settings.fxml"/>
 				</content>
 			</Tab>
-			<Tab fx:id="warListTab" disable="true" text="War List">
+			<Tab fx:id="warListTab" disable="true" text="전쟁 목록">
 				<content>
 					<fx:include fx:id="warList" source="tab/WarList.fxml"/>
 				</content>
 			</Tab>
-			<Tab fx:id="warDetailsTab" disable="true" text="War Details">
+			<Tab fx:id="warDetailsTab" disable="true" text="전쟁 상세">
 				<content>
 					<fx:include fx:id="warDetails" source="tab/WarDetails.fxml"/>
 				</content>
 			</Tab>
-			<Tab fx:id="battleTab" disable="true" text="Battle">
+			<Tab fx:id="battleTab" disable="true" text="전투">
 				<content>
 					<fx:include fx:id="battle" source="tab/Battle.fxml"/>
 				</content>
 			</Tab>
-			<Tab fx:id="wargoalTab" disable="true" text="Wargoal">
+			<Tab fx:id="wargoalTab" disable="true" text="전쟁 목표">
 				<content>
 					<fx:include fx:id="wargoal" source="tab/Wargoal.fxml"/>
 				</content>

@@ -11,12 +11,12 @@ public class Battle {
 	private Result res; // To display in the table
 	private Type battleType; // Default value
 	private int totalLosses;
-	// Attacker 
+	// 공격측
 	private String attacker; // Not shown, used to identify
 	private String leaderAttacker;
 	private Unit[] attackerUnits; // There are only 20 different unit types in total
 	private int attackerLosses;
-	// Defender
+	// 방어측
 	private String defender; // Not shown, used to identify
 	private String leaderDefender = "";
 	private Unit[] defenderUnits; // There are only 20 different unit types in total
@@ -29,7 +29,7 @@ public class Battle {
 		this.date = date;
 		this.name = "";
 		this.name = name;
-		battleType = Type.LAND;
+		battleType = Type.육지;
 		totalLosses = 0;
 		attacker = "";
 		leaderAttacker = "";
@@ -44,14 +44,14 @@ public class Battle {
 	 * Used in wargoal aswell because it also has yes and no states.
 	 */
 	public enum Result {
-		YES, NO
+		승리, 패배
 	}
 
 	/**
 	 * Battle result. Land or naval.
 	 */
 	public enum Type {
-		LAND, NAVAL
+		육지, 해상
 	}
 
 	@Override
@@ -79,7 +79,7 @@ public class Battle {
 				unit = attackerUnits[0].getType();
 				for (String ship : Constants.NAVAL_UNITS) {
 					if (unit.equals(ship)) {
-						setBattleType(Type.NAVAL);
+						setBattleType(Type.해상);
 					}
 				}
 			}

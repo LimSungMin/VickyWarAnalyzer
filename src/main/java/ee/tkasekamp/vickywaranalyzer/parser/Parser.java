@@ -79,7 +79,7 @@ public class Parser {
 		WARGOAL_COUNTER = 0;
 		bracketCounter = 0;
 
-		InputStreamReader reader = new InputStreamReader(new FileInputStream(saveGamePath), "ISO8859_1"); // This encoding seems to work for ö
+		InputStreamReader reader = new InputStreamReader(new FileInputStream(saveGamePath), "EUC-KR"); // This encoding seems to work for ö
 		BufferedReader scanner = new BufferedReader(reader);
 
 		String line;
@@ -264,9 +264,9 @@ public class Parser {
 		} else if (line.startsWith("result")) {
 			line = nameExtractor(line, 7, false);
 			if (line.equals("yes")) {
-				battleList.get(BATTLE_COUNTER).setRes(Result.YES);
+				battleList.get(BATTLE_COUNTER).setRes(Result.승리);
 			} else {
-				battleList.get(BATTLE_COUNTER).setRes(Result.NO);
+				battleList.get(BATTLE_COUNTER).setRes(Result.패배);
 			}
 		} else if (line.startsWith("country")) {
 			line = nameExtractor(line, 9, true);
@@ -379,7 +379,7 @@ public class Parser {
 		} else if (line.startsWith("is_fulfilled")) {
 			line = nameExtractor(line, 13, false);
 			if (line.equals("yes")) {
-				warGoalList.get(WARGOAL_COUNTER).setFulfilled(Result.YES);
+				warGoalList.get(WARGOAL_COUNTER).setFulfilled(Result.승리);
 			}
 		} else if (line.startsWith("}")) {
 			/* This is always the last line in a war goal 
@@ -428,7 +428,7 @@ public class Parser {
 		} else if (line.startsWith("is_fulfilled")) {
 			line = nameExtractor(line, 13, false);
 			if (line.equals("yes")) {
-				warList.get(WAR_COUNTER).getOriginalWarGoal().setFulfilled(Result.YES);
+				warList.get(WAR_COUNTER).getOriginalWarGoal().setFulfilled(Result.승리);
 			}
 		} else if (line.startsWith("}")) {
 			/* This means there is no more data to be added */

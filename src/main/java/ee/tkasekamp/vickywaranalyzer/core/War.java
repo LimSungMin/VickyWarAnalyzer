@@ -70,13 +70,13 @@ public class War {
 			for (JoinedCountry joinedCountry : joinedCountryList) {
 				if (battle.getAttacker().equals(joinedCountry.getTag())) {
 					if (joinedCountry.isJoinType()) {
-						if (battle.getBattleType() == Battle.Type.LAND) {
+						if (battle.getBattleType() == Battle.Type.육지) {
 							attackerTotalLosses += battle.getAttackerLosses();
 						} else {
 							attackerTotalShipLosses += battle.getAttackerLosses();
 						}
 					} else {
-						if (battle.getBattleType() == Battle.Type.LAND) {
+						if (battle.getBattleType() == Battle.Type.육지) {
 							defenderTotalLosses += battle.getDefenderLosses();
 						} else {
 							defenderTotalShipLosses += battle.getDefenderLosses();
@@ -87,13 +87,13 @@ public class War {
 
 				if (battle.getDefender().equals(joinedCountry.getTag())) {
 					if (joinedCountry.isJoinType()) {
-						if (battle.getBattleType() == Battle.Type.LAND) {
+						if (battle.getBattleType() == Battle.Type.육지) {
 							attackerTotalLosses += battle.getAttackerLosses();
 						} else {
 							attackerTotalShipLosses += battle.getAttackerLosses();
 						}
 					} else {
-						if (battle.getBattleType() == Battle.Type.LAND) {
+						if (battle.getBattleType() == Battle.Type.육지) {
 							defenderTotalLosses += battle.getDefenderLosses();
 						} else {
 							defenderTotalShipLosses += battle.getDefenderLosses();

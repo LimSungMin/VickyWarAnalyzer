@@ -19,7 +19,8 @@ Tonis Kasekamp
 .tab-pane .tab-label {
     -fx-font-size: 14pt;
     /*-fx-font-family: "Segoe UI Light"; */
-	-fx-font-family: "Segoe UI", Tahoma, Helvetica, sans-serif; 
+	/*-fx-font-family: "Segoe UI", Tahoma, Helvetica, sans-serif;*/
+	-fx-font-family: "나눔바른고딕";
     -fx-text-fill: white;
 		-fx-text-align: center;
 
@@ -76,20 +77,23 @@ Tonis Kasekamp
 
 .label {
     -fx-font-size: 11pt; /* previously 11pt */
-    -fx-font-family: "Segoe UI Semibold";
+    /*-fx-font-family: "Segoe UI Semibold";*/
+    -fx-font-family: "나눔바른고딕";
     -fx-text-fill: white;
     -fx-opacity: 1; 
 }
 .label-dark {
     -fx-font-size: 11pt; /* previously 11pt */
-    -fx-font-family: "Segoe UI Semibold";
+    /*-fx-font-family: "Segoe UI Semibold";*/
+    -fx-font-family: "나눔바른고딕";
     -fx-text-fill: white;
     -fx-opacity: 0.6; 
 }
 
 .label-header {
     -fx-font-size: 30pt;
-    -fx-font-family: "Segoe UI Light";
+    /*-fx-font-family: "Segoe UI Light";*/
+    -fx-font-family: "나눔바른고딕";
     -fx-text-fill: white;
     -fx-opacity: 1;
 }
@@ -120,7 +124,8 @@ Tonis Kasekamp
 
 .table-view .column-header .label {
     -fx-font-size: 14pt;
-    -fx-font-family: "Segoe UI Light";
+    /*-fx-font-family: "Segoe UI Light";*/
+    -fx-font-family: "나눔바른고딕";
     -fx-text-fill: white;
     -fx-alignment: center-left;
     -fx-opacity: 1;
@@ -146,14 +151,16 @@ Tonis Kasekamp
 
 .menu-bar .label {
     -fx-font-size: 14pt;
-    -fx-font-family: "Segoe UI Light";
+    /*-fx-font-family: "Segoe UI Light";*/
+    -fx-font-family: "나눔바른고딕";
     -fx-text-fill: white;
     -fx-opacity: 0.9;
 }
 
 .text-field {
     -fx-font-size: 12pt;
-    -fx-font-family: "Segoe UI Semibold";
+    /*-fx-font-family: "Segoe UI Semibold";*/
+    -fx-font-family: "나눔바른고딕";
 }
 
 
@@ -170,7 +177,8 @@ Tonis Kasekamp
     -fx-background-radius: 0;
     -fx-background-color: /*#E44424;*/ #1d1d1d; 
     /*-fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif; */
-	-fx-font-family: "Segoe UI", Tahoma, Helvetica, sans-serif; 
+	/*-fx-font-family: "Segoe UI", Tahoma, Helvetica, sans-serif;*/
+	-fx-font-family: "나눔바른고딕";
 	/*-fx-font-family: "Segoe UI Light"; */
     -fx-font-size: 13pt; /* original 11pt */
     /*-fx-text-fill: #d8d8d8; */

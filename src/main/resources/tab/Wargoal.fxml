@@ -18,11 +18,11 @@
 						   prefHeight="226.0" prefWidth="396.0" GridPane.columnIndex="0"
 						   GridPane.rowIndex="2">
 					<columns>
-						<TableColumn minWidth="40.0" prefWidth="75.0" text="Actor"
+						<TableColumn minWidth="40.0" prefWidth="75.0" text="공격국"
 									 fx:id="colWarGoalActor"/>
-						<TableColumn minWidth="40.0" prefWidth="100.0" text="Receiver"
+						<TableColumn minWidth="40.0" prefWidth="100.0" text="방어국"
 									 fx:id="colWarGoalReceiver"/>
-						<TableColumn minWidth="40.0" prefWidth="150.0" text="Casus Belli"
+						<TableColumn minWidth="40.0" prefWidth="150.0" text="명분"
 									 fx:id="colWarGoalCasusBelli"/>
 						<TableColumn minWidth="20.0" prefWidth="100.0" text="Country"
 									 fx:id="colWarGoalCountry"/>

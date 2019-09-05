@@ -59,7 +59,7 @@ public class BattleCountryBox {
 
 	public void populate(Battle battle) {
 		unitsTableContent.clear();
-		if (side == "Attacker")
+		if (side == "공격측")
 			populateBox(battle.getAttacker(), battle.getAttackerUnits(),
 					battle.getAttackerLosses(), battle.getLeaderAttacker());
 
@@ -85,12 +85,12 @@ public class BattleCountryBox {
 
 	private void setHelperLabels() {
 		sideHelper.setText(side + ":");
-		leaderHelper.setText(side + " leader:");
-		sideUnitsHelper.setText(side + " units");
+		leaderHelper.setText(side + " 장군:");
+		sideUnitsHelper.setText(side + " 편제");
 	}
 
 	private void setColumnValues() {
-		/* Attacker side */
+		/* 공격측 side */
 		colUnitType.setCellValueFactory(new PropertyValueFactory<>("type"));
 		colUnitNumber.setCellValueFactory(new PropertyValueFactory<>("number"));
 

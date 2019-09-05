@@ -42,8 +42,8 @@ public class BattleController extends AbstractController {
 		main = mainController;
 		this.tab = tab;
 		this.modelService = modelService;
-		attackerBoxController.init(modelService, "Attacker");
-		defenderBoxController.init(modelService, "Defender");
+		attackerBoxController.init(modelService, "공격측");
+		defenderBoxController.init(modelService, "방어측");
 	}
 
 	@Override
@@ -55,8 +55,8 @@ public class BattleController extends AbstractController {
 
 	public void populate(Battle battle) {
 		tab.setDisable(false);
-		tab.setText("Battle of " + battle.getName());
-		battleName.setText("Battle of " + battle.getName());
+		tab.setText(battle.getName() + " 전투");
+		battleName.setText(battle.getName() + " 전투");
 		battleDate.setText(battle.getDate());
 		battleType.setText(battle.getBattleType().toString());
 		battleLocation.setText(Integer.toString(battle.getLocation()));

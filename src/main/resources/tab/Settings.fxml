@@ -24,7 +24,7 @@
 							<children>
 								<Button fx:id="directoryIssue" mnemonicParsing="false"
 										onAction="#directoryIssueFired"
-										text="Browse"/>
+										text="찾기"/>
 							</children>
 						</HBox>
 						<TextField id="saveGametextField" fx:id="saveGameTextField"
@@ -35,27 +35,27 @@
 							<children>
 								<Button fx:id="saveGameIssue" mnemonicParsing="false"
 										onAction="#saveGameIssueFired"
-										text="Browse"/>
+										text="찾기"/>
 							</children>
 						</HBox>
 						<HBox id="HBox" alignment="CENTER" spacing="5.0" GridPane.columnIndex="0"
 							  GridPane.rowIndex="3">
 							<children>
-								<Label styleClass="label-dark" text="Specify the save game:"/>
+								<Label styleClass="label-dark" text="세이브파일 경로:"/>
 							</children>
 						</HBox>
 						<HBox id="HBox" alignment="CENTER" spacing="5.0" GridPane.columnIndex="2"
 							  GridPane.rowIndex="4">
 							<children>
 								<Button fx:id="startIssue" mnemonicParsing="false"
-										onAction="#startIssueFired" text="Read file"/>
+										onAction="#startIssueFired" text="세이브파일 읽기"/>
 							</children>
 						</HBox>
 						<HBox id="HBox" alignment="CENTER" spacing="5.0" GridPane.columnIndex="0"
 							  GridPane.rowIndex="2">
 							<children>
 								<Label styleClass="label-dark"
-									   text="Victoria II install directory:"/>
+									   text="빅토리아2 설치 폴더:"/>
 							</children>
 						</HBox>
 						<Label fx:id="errorLabel" prefHeight="108.0" prefWidth="527.0"
@@ -63,11 +63,11 @@
 							   GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 						<Label alignment="CENTER" contentDisplay="CENTER" prefWidth="505.0"
 							   styleClass="label-header"
-							   text="Victoria II war analyzer" textAlignment="CENTER"
+							   text="빅토리아 II 전쟁분석기" textAlignment="CENTER"
 							   GridPane.columnIndex="1"
 							   GridPane.rowIndex="0"/>
 						<Label ellipsisString="" prefHeight="81.0" prefWidth="527.0"
-							   text="The save game reader has been tested to work with the base version of the game, AHD and HoD. This tool works as long as the save game stucture remains the same. The flags of the new HoD dominions are not used. "
+							   text="빅토 설치폴더와 특정 세이브파일을 지정한 뒤 파일 읽기를 하면 전쟁 목록을 불러올 수 있음"
 							   textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="1"
 							   GridPane.rowIndex="1"/>
 						<HBox id="HBox" alignment="CENTER" spacing="5.0" GridPane.columnIndex="3"
@@ -80,21 +80,16 @@
 						</HBox>
 						<HBox id="HBox" alignment="CENTER" spacing="5.0" GridPane.columnIndex="3"
 							  GridPane.rowIndex="2">
-							<children>
-								<Label styleClass="label-dark"
-									   text="Install location used for localisation."
-									   wrapText="true"/>
-							</children>
 							<padding>
 								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1"/>
 							</padding>
 						</HBox>
-						<Label styleClass="label-dark" text="Tõnis Kasekamp, 2013-2015"
+						<Label styleClass="label-dark" text="Tõnis Kasekamp, 2013-2015 / 한글대응 : 임롬갤"
 							   GridPane.columnIndex="1"
 							   GridPane.rowIndex="6"/>
 						<CheckBox fx:id="localisationCheck" mnemonicParsing="false" selected="true"
 								  styleClass="label"
-								  text="Use localisation (if unselected, country tags will be displayed as names)"
+								  text="현지화 사용(비선택시 국가이름은 축약어로만 나옴)"
 								  GridPane.columnIndex="1" GridPane.rowIndex="5"/>
 					</children>
 					<columnConstraints>

@@ -55,7 +55,7 @@ public class WarCountryBox extends AbstractController {
 	private Label warLabel;
 
 	/**
-	 * Attacker or defender
+	 * 공격측 or defender
 	 */
 	private String side;
 	private ModelService modelService;
@@ -83,7 +83,7 @@ public class WarCountryBox extends AbstractController {
 
 	public void populate(War war) {
 		reset();
-		if (side == "Attacker") {
+		if (side == "공격측") {
 			populateHelper(war.getAttacker(), war.getOriginalAttacker());
 			populateTable(war.getCountryList(), true);
 		} else {
